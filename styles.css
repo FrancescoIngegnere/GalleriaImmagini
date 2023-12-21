@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;600;700&family=Roboto:wght@700&display=swap');
+
+:root{
+    --grigioChiaro: #dddddd;
+    --grigioScuro: #c0c0c0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: rgb(238, 238, 238);
+}
+
+main.container{
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container h1, .container h4{
+    width: 100%;
+    text-align: center;
+    margin: 20px 0 0 0;
+}
+
+.container h4{
+    margin-bottom: 50px;
+    
+}
+
+    .container h4 span{
+        background-color: black;
+        color: white;
+        padding: 5px;
+    }
+
+section.containerLeft{
+    width: 70%;
+}
+
+section.containerRight{
+    width: 30%;
+}
+
+.containerLeft article{
+    width: 95%;
+    background-color: white;
+    box-shadow: 5px 5px 5px var(--grigioScuro);
+    margin-bottom: 40px;
+}
+
+    article img{
+        width: 100%;
+    }
+
+    article .textArticle{
+        padding: 15px;
+        text-align: justify;
+    }
+
+    .textArticle h2, .textArticle h3{
+        padding-bottom: 20px;
+    }
+
+    .textArticle h3 span{
+        color: var(--grigioScuro);
+    }
+
+    .textArticle p{
+        padding-top: 10px;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    article .appendiceArticle{
+        padding: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .appendiceArticle button{
+        padding: 15px 20px;
+        background-color: white;
+        border: 1px solid var(--grigioScuro);
+        border-radius: 0;
+    }
+
+    .appendiceArticle button:hover{
+        background-color: var(--grigioScuro);
+    }
+
+    .appendiceArticle p span{
+        background-color: black;
+        color: white;
+        padding: 5px 10px;
+    }
+
+    span.sfondoTondo{
+        border-radius: 50%;
+    }
+
+.containerRight article{
+    width: 95%;
+    background-color: white;
+    box-shadow: 5px 5px 5px var(--grigioScuro);
+    margin-bottom: 40px;
+}
+
+    .containerRight article h2{
+        width: 100%;
+        background-color: var(--grigioChiaro);
+        padding: 15px;
+    }
+
+.postPopular{
+    display: flex; 
+    padding: 15px;
+    border-bottom: 1px solid var(--grigioScuro);
+}
+
+    .postPopular:hover{
+        background-color: var(--grigioScuro);
+    }
+
+    .postPopular img{
+        width: 80px;
+    }
+
+    .postPopular .textPost{
+        flex-grow: 1;
+        /* width: 80%;*/
+        padding: 15px; 
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .textPost h3{
+        padding-bottom: 5px;
+    }
+
+    .textPost p{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 200;
+    }
+
+.tags{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+
+    .tags span{
+        background-color: var(--grigioChiaro);
+        padding: 2px 5px;
+        margin: 5px;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .tags span.sfondoScuro{
+        background-color: black;
+        color: white;
+    }
+
+footer{
+    background-color: gray;
+    padding: 30px;
+    width: 100%;
+}
+
+    footer button{
+        margin-bottom: 30px;
+        background-color: black;
+        color: white;
+        padding: 15px 20px;
+        border: none;
+    }
+
+    footer button:first-child{
+        opacity: 0.5;
+        color: var(--grigioChiaro);
+    }
+
+    footer button:first-child:hover{
+        color: gray;
+        background-color: var(--grigioChiaro);
+    }
+
+    footer button:last-of-type:hover{
+        color: gray;
+        background-color: var(--grigioChiaro);
+    }
+
+    footer p, footer a{
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+
+@media screen and (max-width: 1260px) {
+
+    main.container{
+        width: 100%;
+        margin: 0 20px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+
+    section.containerLeft{
+        width: 100%;
+    }
+    
+    section.containerRight{
+        width: 100%;
+    }
+}
+
+
+/* 
+    | //
+   ( @ @ )
+ooO__(_)__Ooo
+٩(͡๏̯͡๏)۶
+*/
